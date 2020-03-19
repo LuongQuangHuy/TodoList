@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		283278802422C46E00EDFC58 /* EdittingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2832787E2422C46E00EDFC58 /* EdittingScreen.swift */; };
+		283278812422C46E00EDFC58 /* EdittingScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2832787F2422C46E00EDFC58 /* EdittingScreen.xib */; };
+		284572A32422AC630015D404 /* WorkDidSetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284572A22422AC630015D404 /* WorkDidSetCell.swift */; };
+		285967152422D784000BC3D1 /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285967142422D784000BC3D1 /* Work.swift */; };
+		28DF5CC624075C920017D8CB /* AllWorkDidSetScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DF5CC424075C920017D8CB /* AllWorkDidSetScreen.swift */; };
+		28DF5CC724075C920017D8CB /* AllWorkDidSetScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28DF5CC524075C920017D8CB /* AllWorkDidSetScreen.xib */; };
+		28DF5CD524075F7A0017D8CB /* AllWorkToDayScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DF5CD324075F7A0017D8CB /* AllWorkToDayScreen.swift */; };
+		28DF5CD624075F7A0017D8CB /* AllWorkToDayScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28DF5CD424075F7A0017D8CB /* AllWorkToDayScreen.xib */; };
 		28E116052401B80B00383B40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E116042401B80B00383B40 /* AppDelegate.swift */; };
 		28E116072401B80B00383B40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E116062401B80B00383B40 /* SceneDelegate.swift */; };
 		28E116092401B80B00383B40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E116082401B80B00383B40 /* ViewController.swift */; };
@@ -16,9 +24,23 @@
 		28E116142401B80C00383B40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E116122401B80C00383B40 /* LaunchScreen.storyboard */; };
 		28E1161D2401EA7A00383B40 /* MainViewMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E1161B2401EA7A00383B40 /* MainViewMenuItem.swift */; };
 		28E1161E2401EA7A00383B40 /* MainViewMenuItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28E1161C2401EA7A00383B40 /* MainViewMenuItem.xib */; };
+		28F4C95B24226A7E0065DF0F /* AddNewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F4C95924226A7E0065DF0F /* AddNewScreen.swift */; };
+		28F4C95C24226A7E0065DF0F /* AddNewScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F4C95A24226A7E0065DF0F /* AddNewScreen.xib */; };
+		28F9E02B240E2B8200FEB42A /* WorkTimeOutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F9E029240E2B8200FEB42A /* WorkTimeOutScreen.swift */; };
+		28F9E02C240E2B8200FEB42A /* WorkTimeOutScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F9E02A240E2B8200FEB42A /* WorkTimeOutScreen.xib */; };
+		28F9E02F240E2CFC00FEB42A /* WorkTimeOutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F9E02D240E2CFC00FEB42A /* WorkTimeOutCell.swift */; };
+		28F9E030240E2CFC00FEB42A /* WorkTimeOutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F9E02E240E2CFC00FEB42A /* WorkTimeOutCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2832787E2422C46E00EDFC58 /* EdittingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdittingScreen.swift; sourceTree = "<group>"; };
+		2832787F2422C46E00EDFC58 /* EdittingScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EdittingScreen.xib; sourceTree = "<group>"; };
+		284572A22422AC630015D404 /* WorkDidSetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkDidSetCell.swift; sourceTree = "<group>"; };
+		285967142422D784000BC3D1 /* Work.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
+		28DF5CC424075C920017D8CB /* AllWorkDidSetScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWorkDidSetScreen.swift; sourceTree = "<group>"; };
+		28DF5CC524075C920017D8CB /* AllWorkDidSetScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllWorkDidSetScreen.xib; sourceTree = "<group>"; };
+		28DF5CD324075F7A0017D8CB /* AllWorkToDayScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWorkToDayScreen.swift; sourceTree = "<group>"; };
+		28DF5CD424075F7A0017D8CB /* AllWorkToDayScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllWorkToDayScreen.xib; sourceTree = "<group>"; };
 		28E116012401B80B00383B40 /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E116042401B80B00383B40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28E116062401B80B00383B40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +52,12 @@
 		28E116152401B80C00383B40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28E1161B2401EA7A00383B40 /* MainViewMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewMenuItem.swift; sourceTree = "<group>"; };
 		28E1161C2401EA7A00383B40 /* MainViewMenuItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewMenuItem.xib; sourceTree = "<group>"; };
+		28F4C95924226A7E0065DF0F /* AddNewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewScreen.swift; sourceTree = "<group>"; };
+		28F4C95A24226A7E0065DF0F /* AddNewScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewScreen.xib; sourceTree = "<group>"; };
+		28F9E029240E2B8200FEB42A /* WorkTimeOutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkTimeOutScreen.swift; sourceTree = "<group>"; };
+		28F9E02A240E2B8200FEB42A /* WorkTimeOutScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkTimeOutScreen.xib; sourceTree = "<group>"; };
+		28F9E02D240E2CFC00FEB42A /* WorkTimeOutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkTimeOutCell.swift; sourceTree = "<group>"; };
+		28F9E02E240E2CFC00FEB42A /* WorkTimeOutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkTimeOutCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +71,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2832787D2422C45000EDFC58 /* EdittingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2832787E2422C46E00EDFC58 /* EdittingScreen.swift */,
+				2832787F2422C46E00EDFC58 /* EdittingScreen.xib */,
+			);
+			path = EdittingScreen;
+			sourceTree = "<group>";
+		};
+		28DF5CC324075C460017D8CB /* AllWorkDidSetScreen */ = {
+			isa = PBXGroup;
+			children = (
+				28DF5CC424075C920017D8CB /* AllWorkDidSetScreen.swift */,
+				28DF5CC524075C920017D8CB /* AllWorkDidSetScreen.xib */,
+			);
+			path = AllWorkDidSetScreen;
+			sourceTree = "<group>";
+		};
+		28DF5CC824075E900017D8CB /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				28E1161B2401EA7A00383B40 /* MainViewMenuItem.swift */,
+				28E1161C2401EA7A00383B40 /* MainViewMenuItem.xib */,
+				28E116082401B80B00383B40 /* ViewController.swift */,
+				28E1160A2401B80B00383B40 /* Main.storyboard */,
+			);
+			name = MainScreen;
+			sourceTree = "<group>";
+		};
+		28DF5CD224075F510017D8CB /* AllWorkToDayScreen */ = {
+			isa = PBXGroup;
+			children = (
+				28DF5CD324075F7A0017D8CB /* AllWorkToDayScreen.swift */,
+				28DF5CD424075F7A0017D8CB /* AllWorkToDayScreen.xib */,
+			);
+			path = AllWorkToDayScreen;
+			sourceTree = "<group>";
+		};
+		28DF5CD7240760010017D8CB /* WorkTimeOutScreen */ = {
+			isa = PBXGroup;
+			children = (
+				28F9E029240E2B8200FEB42A /* WorkTimeOutScreen.swift */,
+				28F9E02A240E2B8200FEB42A /* WorkTimeOutScreen.xib */,
+				28F9E02D240E2CFC00FEB42A /* WorkTimeOutCell.swift */,
+				28F9E02E240E2CFC00FEB42A /* WorkTimeOutCell.xib */,
+			);
+			path = WorkTimeOutScreen;
+			sourceTree = "<group>";
+		};
 		28E115F82401B80B00383B40 = {
 			isa = PBXGroup;
 			children = (
@@ -62,18 +139,31 @@
 		28E116032401B80B00383B40 /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				2832787D2422C45000EDFC58 /* EdittingScreen */,
+				28F4C95824226A470065DF0F /* addNewScreen */,
+				28DF5CD7240760010017D8CB /* WorkTimeOutScreen */,
+				28DF5CD224075F510017D8CB /* AllWorkToDayScreen */,
+				28DF5CC324075C460017D8CB /* AllWorkDidSetScreen */,
+				28DF5CC824075E900017D8CB /* MainScreen */,
+				284572A22422AC630015D404 /* WorkDidSetCell.swift */,
 				28E116042401B80B00383B40 /* AppDelegate.swift */,
-				28E116062401B80B00383B40 /* SceneDelegate.swift */,
-				28E116082401B80B00383B40 /* ViewController.swift */,
-				28E1160A2401B80B00383B40 /* Main.storyboard */,
 				28E116102401B80C00383B40 /* Assets.xcassets */,
-				28E116122401B80C00383B40 /* LaunchScreen.storyboard */,
 				28E116152401B80C00383B40 /* Info.plist */,
+				28E116122401B80C00383B40 /* LaunchScreen.storyboard */,
+				28E116062401B80B00383B40 /* SceneDelegate.swift */,
 				28E1160D2401B80B00383B40 /* TodoList.xcdatamodeld */,
-				28E1161B2401EA7A00383B40 /* MainViewMenuItem.swift */,
-				28E1161C2401EA7A00383B40 /* MainViewMenuItem.xib */,
+				285967142422D784000BC3D1 /* Work.swift */,
 			);
 			path = TodoList;
+			sourceTree = "<group>";
+		};
+		28F4C95824226A470065DF0F /* addNewScreen */ = {
+			isa = PBXGroup;
+			children = (
+				28F4C95924226A7E0065DF0F /* AddNewScreen.swift */,
+				28F4C95A24226A7E0065DF0F /* AddNewScreen.xib */,
+			);
+			path = addNewScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +224,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28F4C95C24226A7E0065DF0F /* AddNewScreen.xib in Resources */,
+				28F9E030240E2CFC00FEB42A /* WorkTimeOutCell.xib in Resources */,
+				28F9E02C240E2B8200FEB42A /* WorkTimeOutScreen.xib in Resources */,
+				283278812422C46E00EDFC58 /* EdittingScreen.xib in Resources */,
+				28DF5CD624075F7A0017D8CB /* AllWorkToDayScreen.xib in Resources */,
 				28E116142401B80C00383B40 /* LaunchScreen.storyboard in Resources */,
+				28DF5CC724075C920017D8CB /* AllWorkDidSetScreen.xib in Resources */,
 				28E1161E2401EA7A00383B40 /* MainViewMenuItem.xib in Resources */,
 				28E116112401B80C00383B40 /* Assets.xcassets in Resources */,
 				28E1160C2401B80B00383B40 /* Main.storyboard in Resources */,
@@ -150,9 +246,17 @@
 			files = (
 				28E116092401B80B00383B40 /* ViewController.swift in Sources */,
 				28E116052401B80B00383B40 /* AppDelegate.swift in Sources */,
+				285967152422D784000BC3D1 /* Work.swift in Sources */,
 				28E116072401B80B00383B40 /* SceneDelegate.swift in Sources */,
+				28F9E02B240E2B8200FEB42A /* WorkTimeOutScreen.swift in Sources */,
+				28DF5CD524075F7A0017D8CB /* AllWorkToDayScreen.swift in Sources */,
+				28DF5CC624075C920017D8CB /* AllWorkDidSetScreen.swift in Sources */,
 				28E1160F2401B80B00383B40 /* TodoList.xcdatamodeld in Sources */,
+				28F4C95B24226A7E0065DF0F /* AddNewScreen.swift in Sources */,
 				28E1161D2401EA7A00383B40 /* MainViewMenuItem.swift in Sources */,
+				28F9E02F240E2CFC00FEB42A /* WorkTimeOutCell.swift in Sources */,
+				284572A32422AC630015D404 /* WorkDidSetCell.swift in Sources */,
+				283278802422C46E00EDFC58 /* EdittingScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

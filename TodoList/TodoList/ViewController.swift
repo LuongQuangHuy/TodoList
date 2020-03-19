@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+var dataBase: [Awork] = []
 class ViewController: UIViewController {
     //ViewController properties
     let menuTableView = UITableView()
@@ -69,30 +69,8 @@ class ViewController: UIViewController {
         showOutTimeWorkButton.layer.cornerRadius = 10.0
         showAllWorkToDayButton.layer.cornerRadius = 10.0
         showAllWorkButton.layer.cornerRadius = 10.0
-        layoutIcon()
     }
     
-    func layoutIcon(){
-        let someSpacing = idiaIcon.bounds.size.width/2
-        //layout idia icon
-        idiaIcon.translatesAutoresizingMaskIntoConstraints = false
-        idiaIcon.centerYAnchor.constraint(equalTo: addNewItemButton.centerYAnchor).isActive = true
-        idiaIcon.trailingAnchor.constraint(equalTo: addNewItemButton.leadingAnchor, constant: someSpacing).isActive = true
-        //layout dhcIcon
-        dhcIcon.translatesAutoresizingMaskIntoConstraints = false
-        dhcIcon.centerYAnchor.constraint(equalTo: showOutTimeWorkButton.centerYAnchor).isActive = true
-        dhcIcon.trailingAnchor.constraint(equalTo: showOutTimeWorkButton.leadingAnchor, constant: someSpacing).isActive = true
-        //layout calendar icon
-        calendarIcon.translatesAutoresizingMaskIntoConstraints = false
-        calendarIcon.centerYAnchor.constraint(equalTo: showAllWorkToDayButton.centerYAnchor).isActive = true
-        calendarIcon.trailingAnchor.constraint(equalTo: showAllWorkToDayButton.leadingAnchor, constant: someSpacing).isActive = true
-        //layout database icon
-        databaseIcon.translatesAutoresizingMaskIntoConstraints = false
-        databaseIcon.centerYAnchor.constraint(equalTo: showAllWorkButton.centerYAnchor).isActive = true
-        databaseIcon.trailingAnchor.constraint(equalTo: showAllWorkButton.leadingAnchor, constant: someSpacing).isActive = true
-        
-        
-    }
     
     @objc func backToMainView(){
         view.sendSubviewToBack(darkView)
@@ -103,6 +81,32 @@ class ViewController: UIViewController {
         view.bringSubviewToFront(menuView)
     }
     
+    @IBAction func addNewWorkAction(_ sender: Any) {
+        let addNewScreen = AddNewScreen()
+        let navigation = UINavigationController(rootViewController: addNewScreen)
+        navigation.modalPresentationStyle = .fullScreen
+        present(navigation, animated: false)
+    }
+    
+    @IBAction func showTimeOutWorkAction(_ sender: Any) {
+        let workTimeOutScreen = WorkTimeOutScreen()
+        let navigation = UINavigationController(rootViewController: workTimeOutScreen)
+        navigation.modalPresentationStyle = .fullScreen
+        present(navigation, animated: false)
+    }
+    
+    @IBAction func showAllWorkTodayAction(_ sender: Any) {
+        let allWorkTodayScreen = AllWorkToDayScreen()
+        let navigation = UINavigationController(rootViewController: allWorkTodayScreen)
+        navigation.modalPresentationStyle = .fullScreen
+        present(navigation, animated: false)
+    }
+    @IBAction func showAllWorkAction(_ sender: Any) {
+        let allWorkDidSetScreen = AllWorkDidSetScreen()
+        let navigation = UINavigationController(rootViewController: allWorkDidSetScreen)
+        navigation.modalPresentationStyle = .fullScreen
+        present(navigation, animated: false)
+    }
 }
 
 
@@ -131,6 +135,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
 
 extension ViewController{
     func fakeDataMenuItem() -> [String]{
-           return ["Cài đặt" , "Quản lý dữ liệu" , "Thoát ứng dụng"]
+           return ["Quản lý dữ liệu" , "Thoát ứng dụng"]
        }
 }
