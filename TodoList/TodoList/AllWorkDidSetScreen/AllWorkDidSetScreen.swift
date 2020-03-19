@@ -19,6 +19,8 @@ class AllWorkDidSetScreen: UIViewController {
         configureTableView()
         configureNavigationBar()
         
+        createObserver()
+        
     }
     
     func configureTableView(){
@@ -59,6 +61,30 @@ class AllWorkDidSetScreen: UIViewController {
         currentDataSource = dataBase
         tableView.reloadData()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
+    func createObserver(){
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadDataTableView(notification:)), name: Notification.Name(rawValue: "deleted Cell"), object: nil)
+    }
+    
+    @objc func reloadDataTableView(notification: NSNotification){
+        if let data = notification.userInfo as? [IndexPath : Int]{
+            for (indexPath , row) in data{
+                currentDataSource.remove(at: row)
+                tableView.beginUpdates()
+                tableView.deleteRows(at: [indexPath], with: .automatic)
+                tableView.endUpdates()
+            }
+        }
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
 
 }
 
@@ -78,8 +104,8 @@ extension AllWorkDidSetScreen: UITableViewDelegate, UITableViewDataSource{
         cell.dateLabel.text = dateFormatter.string(from: currentDataSource[indexPath.row].date!)
         cell.timeLabel.text = timeFormatter.string(from: currentDataSource[indexPath.row].date!)
         cell.id = currentDataSource[indexPath.row].workId
-        cell.tableViewDelegate = tableView
         cell.navigationDelegate = self.navigationController
+        cell.indexPath = indexPath
         return cell
     }
     

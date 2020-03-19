@@ -139,20 +139,20 @@
 		28E116032401B80B00383B40 /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				285967142422D784000BC3D1 /* Work.swift */,
+				284572A22422AC630015D404 /* WorkDidSetCell.swift */,
 				2832787D2422C45000EDFC58 /* EdittingScreen */,
 				28F4C95824226A470065DF0F /* addNewScreen */,
 				28DF5CD7240760010017D8CB /* WorkTimeOutScreen */,
 				28DF5CD224075F510017D8CB /* AllWorkToDayScreen */,
 				28DF5CC324075C460017D8CB /* AllWorkDidSetScreen */,
 				28DF5CC824075E900017D8CB /* MainScreen */,
-				284572A22422AC630015D404 /* WorkDidSetCell.swift */,
 				28E116042401B80B00383B40 /* AppDelegate.swift */,
 				28E116102401B80C00383B40 /* Assets.xcassets */,
 				28E116152401B80C00383B40 /* Info.plist */,
 				28E116122401B80C00383B40 /* LaunchScreen.storyboard */,
 				28E116062401B80B00383B40 /* SceneDelegate.swift */,
 				28E1160D2401B80B00383B40 /* TodoList.xcdatamodeld */,
-				285967142422D784000BC3D1 /* Work.swift */,
 			);
 			path = TodoList;
 			sourceTree = "<group>";

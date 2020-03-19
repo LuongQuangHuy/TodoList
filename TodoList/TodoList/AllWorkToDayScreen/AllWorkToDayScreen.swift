@@ -16,6 +16,8 @@ class AllWorkToDayScreen: UIViewController {
         filterResult()
         configureNavigationBar()
         configureTableView()
+   
+        createObserver()
     }
 
     func configureNavigationBar(){
@@ -48,7 +50,32 @@ class AllWorkToDayScreen: UIViewController {
         let result = dataBase.filter({$0.isToDay()})
         todayWork = result
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tableView.reloadData()
+    }
+    
+    func createObserver(){
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadDataTableView(notification:)), name: Notification.Name(rawValue: "deleted Cell"), object: nil)
+    }
+    
+    @objc func reloadDataTableView(notification: NSNotification){
+        if let data = notification.userInfo as? [IndexPath:Int]{
+            
+            for (indexPath,row) in data{
+                todayWork.remove(at: row)
+                tableView.beginUpdates()
+                tableView.deleteRows(at: [indexPath], with: .automatic)
+                tableView.endUpdates()
+            }
+            
+        }
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
 }
 
 extension AllWorkToDayScreen: UITableViewDelegate, UITableViewDataSource {
@@ -66,8 +93,8 @@ extension AllWorkToDayScreen: UITableViewDelegate, UITableViewDataSource {
         cell.dateLabel.text = dateFormatter.string(from: todayWork[indexPath.row].date!)
         cell.timeLabel.text = timeFormatter.string(from: todayWork[indexPath.row].date!)
         cell.id = todayWork[indexPath.row].workId
-        cell.tableViewDelegate = tableView
         cell.navigationDelegate = self.navigationController
+        cell.indexPath = indexPath
         return cell
     }
     

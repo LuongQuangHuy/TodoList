@@ -10,7 +10,7 @@ import UIKit
 
 class WorkDidSetCell: UITableViewCell {
     var id: String?
-    var tableViewDelegate: UITableView?
+    var indexPath: IndexPath?
     var navigationDelegate: UINavigationController?
     private var showOn: Bool!
     private var bottomViewHeightMin: NSLayoutConstraint!
@@ -39,6 +39,8 @@ class WorkDidSetCell: UITableViewCell {
         configureBottomView()
         layoutBottomView()
         layoutMainView()
+        
+    
     }
     
     func layoutBottomView(){
@@ -172,13 +174,14 @@ class WorkDidSetCell: UITableViewCell {
             for (index, data) in dataBase.enumerated(){
                 if data.workId == workid{
                     dataBase.remove(at: index)
+                    if let indexpath = indexPath{
+                        NotificationCenter.default.post(name: Notification.Name(rawValue: "deleted Cell"), object: nil, userInfo: [indexpath : indexpath.row])
+                    }
                 }
-            }
-            if let tableView = tableViewDelegate{
-                tableView.reloadData()
             }
         }
     }
+    
     
     func layoutDeleteButton(){
         deleteButton.translatesAutoresizingMaskIntoConstraints = false
