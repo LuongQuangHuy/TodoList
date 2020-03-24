@@ -32,7 +32,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lương Quang Huy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdl-9q-XRx">
-                                                <rect key="frame" x="8" y="76" width="247.5" height="36"/>
+                                                <rect key="frame" x="8" y="92" width="247.5" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                                 <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <nil key="highlightedColor"/>
@@ -58,7 +58,7 @@
                                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="Efu-hL-Irk"/>
-                                            <constraint firstItem="pW5-tQ-fvB" firstAttribute="top" secondItem="Zdl-9q-XRx" secondAttribute="bottom" constant="32" id="LJV-tL-V5i"/>
+                                            <constraint firstItem="pW5-tQ-fvB" firstAttribute="top" secondItem="Zdl-9q-XRx" secondAttribute="bottom" constant="16" id="LJV-tL-V5i"/>
                                             <constraint firstAttribute="bottom" secondItem="pW5-tQ-fvB" secondAttribute="bottom" constant="32" id="YOB-fr-dfW"/>
                                             <constraint firstAttribute="trailing" secondItem="Rhs-BD-yap" secondAttribute="trailing" constant="8" id="cqq-Gq-3U1"/>
                                             <constraint firstItem="pW5-tQ-fvB" firstAttribute="leading" secondItem="buJ-jM-RZP" secondAttribute="leading" constant="8" id="evD-Yh-evx"/>
