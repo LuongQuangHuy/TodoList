@@ -64,7 +64,6 @@ class EdittingScreen: UIViewController {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd/MM/yyyy"
         dayTextField.text = dateFormatter.string(from: datePicker.date)
-        containerView.endEditing(true)
     }
     
     func configureTimePicker(){
@@ -79,7 +78,6 @@ class EdittingScreen: UIViewController {
         timeFormatter.dateFormat = "HH:mm"
         timeTextField.text = timeFormatter.string(from: timePicker.date)
         timeTextField.tintColor = .white
-        containerView.endEditing(true)
         
     }
 

@@ -65,7 +65,7 @@ class AddNewScreen: UIViewController {
         dateFormatter.dateFormat = "dd/MM/yyyy"
         inputDay.text = dateFormatter.string(from: datePicker.date)
         inputDay.backgroundColor = .systemYellow
-        containerView.endEditing(true)
+        
     }
     
     func configureTimePicker(){
@@ -81,7 +81,7 @@ class AddNewScreen: UIViewController {
         timeFormatter.dateFormat = "HH:mm"
         inputTime.text = timeFormatter.string(from: timePicker.date)
         inputTime.backgroundColor = .systemYellow
-        containerView.endEditing(true)
+        
     }
 
     @IBAction func addNewAction(_ sender: Any) {
